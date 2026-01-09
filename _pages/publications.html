@@ -5,32 +5,146 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<style>
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
 
-{% include base_path %}
+.pub-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+.pub-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pub-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pub-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.pub-citation {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.pub-links {
+  font-size: 0.9rem;
+}
+
+.pub-links a {
+  color: #0066cc;
+  text-decoration: none;
+  margin: 0 0.25rem;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+.year-section {
+  margin-top: 2.5rem;
+}
+
+.year-section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.scholar-link {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+</style>
+
+<!-- Link to your Google Scholar profile -->
+<div class="scholar-link">
+  You can also find my articles on <a href="https://scholar.google.com/citations?hl=en&user=ZDxv9l8AAAAJ">my Google Scholar profile</a>.
+</div>
 
 
+<!-- ============================================================
+     YEAR SECTION: 2025
+     Duplicate this entire section for each year you need
+     ============================================================ -->
+<div class="year-section">
+  <h2>2025</h2>
+  <div class="publications-grid">
+    
+    <!-- ========== PUBLICATION CARD START ==========
+         Copy from here to "PUBLICATION CARD END" for each new paper
+         ============================================= -->
+    <div class="pub-card">
+      <!-- 
+        THUMBNAIL IMAGE
+        - Save a screenshot of page 1 of your paper to /images/pubs/
+        - Recommended size: ~600x400px
+        - Update the src path and alt text below
+      -->
+      <img src="/images/pubs/YOUR_IMAGE.png" alt="Brief description" class="pub-thumbnail">
+      
+      <div class="pub-info">
+        <!-- 
+          CITATION
+          Format: Author et al. Title. Journal (Year)
+          Use <em>...</em> for italic journal names
+        -->
+        <div class="pub-citation">
+          LastName et al. Your paper title goes here. <em>Journal Name</em> (2025)
+        </div>
+        
+        <!-- 
+          LINKS
+          - Replace XXXXXXXX with your actual PMID number
+          - For PDF: save PDF to /files/ folder and update path
+          - Remove PDF link if you don't want to host the file
+        -->
+        <div class="pub-links">
+          PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/XXXXXXXX/">XXXXXXXX</a> | 
+          <a href="/files/your_paper.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+    <!-- ========== PUBLICATION CARD END ========== -->
 
+    <!-- Add more pub-cards here for 2025 papers -->
+
+  </div>
+</div>
+
+
+<!-- ============================================================
+     YEAR SECTION: 2024
+     ============================================================ -->
+<div class="year-section">
+  <h2>2024</h2>
+  <div class="publications-grid">
+    
+    <!-- Paste pub-card blocks here for 2024 papers -->
+
+  </div>
+</div>
+
+
+<!-- ============================================================
+     Add more year sections below as needed
+     Just copy a year-section block and change the year
+     ============================================================ -->
