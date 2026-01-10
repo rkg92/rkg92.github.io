@@ -24,11 +24,11 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Riddhiman K. Garge"
   pronouns         : # example: "she/her"  
   bio              : "Predominantly a biologist. Musician and vinyl collector outside the lab. Mostly in that order"
   location         : "Seattle, WA"
-  employer         : "Department of Genome Sciences, University of Washington"
+  employer         : "Department of Genome Sciences, UW"
   uri              : # URL
   email            : "rgarge@uw.edu" 
 
