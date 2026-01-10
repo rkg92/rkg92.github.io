@@ -55,21 +55,3 @@ Publications
 11. Laurent, J.M., **Garge, R.K.**, Teufel, A.I., Wilke, C.O., Kachroo, A.H., and Marcotte, E.M. Humanization of yeast genes with multiple human orthologs reveals functional divergence between paralogs. PLoS Biology (2020).
 12. Blank, H.M., Papoulas, O., Maitra, N., **Garge, R.K.**, Kennedy, B.K., Schilling, B., Marcotte, E.M., and Polymenis, M. Abundances of transcripts, proteins, and metabolites in the cell cycle of budding yeast reveal coordinate control of lipid metabolism. Molecular Biology of the Cell (2020).
 13. Akhmetov, A., Laurent, J.M., Gollihar, J., Gardner, E.C., **Garge, R.K.**, Ellington, A.D., Kachroo, A.H., and Marcotte, E.M. Single-step Precision Genome Editing in Yeast Using CRISPR-Cas9. Bio Protocol (2018).
-
-
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
