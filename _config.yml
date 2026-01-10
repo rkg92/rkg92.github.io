@@ -279,12 +279,12 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
+  # _music
   - scope:
       path: ""
-      type: talks
+      type: music
     values:
-      layout: talk
+      layout: music
       author_profile: true
       share: true
 
