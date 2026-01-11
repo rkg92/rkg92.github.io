@@ -35,3 +35,15 @@ Positions and Research Experience
 
 * 2012: Research Assistant
   * Schrödinger India Inc.
+
+Fellowships and Awards
+======
+* 2023 - Present: Washington Research Foundation Postdoctoral Fellowship
+* 2021 - 2023: CMAP Postdoctoral Fellowship
+* 2019: Institute for Cellular and Molecular Biology (ICMB) Travel Award
+* 2018 - 2020: American Heart Association (AHA) Predoctoral Fellowship
+* 2018: Marion Elizabeth Eason Endowed Scholarship for The Study of Biology
+* 2018: Graduate Dean's Prestigious Fellowship Supplement
+* 2018: David Bruton Jr. Graduate School Fellowship
+* 2018: ICMB Biochemistry Program Summer Travel Award
+* 2017: ICMB Biochemistry Program Summer Travel Award
