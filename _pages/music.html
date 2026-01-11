@@ -17,7 +17,7 @@ author_profile: true
 
 .music-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -25,37 +25,31 @@ author_profile: true
   background: #f9f9f9;
   border-radius: 12px;
   padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .music-item iframe {
-  max-width: 100%;
+  width: 100%;
+  border-radius: 8px;
 }
 
-/* Make Spotify embeds full width within their container */
-.spotify-item {
-  min-height: 380px;
+/* Spotify embeds need more height */
+.spotify-item iframe {
+  height: 380px;
 }
 
-/* Bandcamp - same size as others in grid */
-.bandcamp-item {
-  /* spans 1 column like the rest */
+/* YouTube embeds - proper aspect ratio */
+.youtube-item {
+  aspect-ratio: 16/9;
 }
 
-@media (max-width: 1024px) {
-  .music-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.youtube-item iframe {
+  width: 100%;
+  height: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .music-grid {
     grid-template-columns: 1fr;
-  }
-  .bandcamp-item {
-    grid-column: span 1;
   }
 }
 </style>
@@ -67,22 +61,22 @@ author_profile: true
   <div class="music-grid">
     <!-- Spotify Album 1 -->
     <div class="music-item spotify-item">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6jkABh5csgLMSpQVuYgIQF?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe src="https://open.spotify.com/embed/album/6jkABh5csgLMSpQVuYgIQF?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
     <!-- Spotify Album 2 -->
     <div class="music-item spotify-item">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/02X3uOhvwdQV73bxOS2svy?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe src="https://open.spotify.com/embed/album/02X3uOhvwdQV73bxOS2svy?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
     <!-- YouTube -->
-    <div class="music-item">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZPz1DjTz7Qk?si=kqnhZbalM48_bRvW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="music-item youtube-item">
+      <iframe src="https://www.youtube.com/embed/ZPz1DjTz7Qk?si=kqnhZbalM48_bRvW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <!-- Bandcamp -->
-    <div class="music-item bandcamp-item">
-      <iframe style="border: 0; width: 100%; height: 439px;" src="https://bandcamp.com/EmbeddedPlayer/album=1318495491/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://beachcity.bandcamp.com/album/the-summer-never-ended-2">the summer never ended by beach city</a></iframe>
+    <div class="music-item">
+      <iframe style="border: 0; width: 100%; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1318495491/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://beachcity.bandcamp.com/album/the-summer-never-ended-2">the summer never ended by beach city</a></iframe>
     </div>
   </div>
 </div>
@@ -92,24 +86,24 @@ author_profile: true
   <h2>Drumming Play-throughs</h2>
   
   <div class="music-grid">
-    <div class="music-item">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/38mZ_4VGlyY?si=hN8mHMZAfkUYw65U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="music-item youtube-item">
+      <iframe src="https://www.youtube.com/embed/38mZ_4VGlyY?si=hN8mHMZAfkUYw65U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div class="music-item">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/PFNrMr1rYCA?si=JDPZiUZesIG87fE9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="music-item youtube-item">
+      <iframe src="https://www.youtube.com/embed/PFNrMr1rYCA?si=JDPZiUZesIG87fE9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div class="music-item">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/cUCR2x0M0DU?si=k3C68xACN-1eA5_u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="music-item youtube-item">
+      <iframe src="https://www.youtube.com/embed/cUCR2x0M0DU?si=k3C68xACN-1eA5_u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div class="music-item">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/UMmX4Szo680?si=gHFxp2OneAWicxOe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="music-item youtube-item">
+      <iframe src="https://www.youtube.com/embed/UMmX4Szo680?si=gHFxp2OneAWicxOe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div class="music-item">
-      <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/share/v/1HQcPzRi6U/&show_text=false&width=560" width="100%" height="315" style="border:none;overflow:hidden" frameborder="0" allowfullscreen="true"></iframe>
+    <div class="music-item youtube-item">
+      <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/share/v/1HQcPzRi6U/&show_text=false&width=560" style="border:none;overflow:hidden" frameborder="0" allowfullscreen="true"></iframe>
     </div>
   </div>
 </div>
