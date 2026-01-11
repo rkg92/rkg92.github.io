@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Full CV (PDF)](/files/RGarge_CV.pdf)
+
 Education
 ======
 * Ph.D in Biochemistry, The University of Texas at Austin, 2021
