@@ -19,25 +19,19 @@ Education
 Positions and Research Experience
 ======
 * 2021 - Present: Postdoctoral Researcher
-  * Center for Multiplex Assessment of Phenotype
-  * Deparment of Genome Sciences
-  * University of Washington
+  * Center for Multiplex Assessment of Phenotype<br>Department of Genome Sciences<br>University of Washington
 
 * 2021 - Present: Research Fellow
-  * Brotman Baty Institute of Precision Medicine
-  * University of Washington
+  * Brotman Baty Institute of Precision Medicine<br>University of Washington
 
-* 2015 - 2016: Graduate Research Assitant
-  * Department of Molecular Biosciences
-  * The University of Texas at Austin
+* 2015 - 2016: Graduate Research Assistant
+  * Department of Molecular Biosciences<br>The University of Texas at Austin
 
-* 2014 - 2015: Undergraduate Research Assitant
-  * Institute of Stem Cell and Regenerative Medicine
-  * National Center for Biological Sciences, Bangalore
+* 2014 - 2015: Undergraduate Research Assistant
+  * Institute of Stem Cell and Regenerative Medicine<br>National Center for Biological Sciences, Bangalore
 
 * 2013: Research Assistant
-  * Bugworks Research India Pvt Ltd.
-  * Center for Cellular and Molecular Platforms
+  * Bugworks Research India Pvt Ltd.<br>Center for Cellular and Molecular Platforms
 
 * 2012: Research Assistant
   * Schrödinger India Inc.
