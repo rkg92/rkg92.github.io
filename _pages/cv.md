@@ -38,7 +38,7 @@ Positions and Research Experience
 
 Fellowships and Awards
 ======
-* 2026 - Present: NICHD K99/R00 Pathway to Independence Award
+* 2026 - Present: NIH K99/R00 Pathway to Independence Award
 * 2023 - 2026: Washington Research Foundation Postdoctoral Fellowship
 * 2021 - 2023: CMAP Postdoctoral Fellowship
 * 2019: Institute for Cellular and Molecular Biology (ICMB) Travel Award
